@@ -1,18 +1,26 @@
-# pdw
+FORMAT: A1
 
-Cabeçalho
-=========
+# Movies API
 
-Sub-Cabeçalho
--------------
+This is an API Blueprint example describing a movies API.
 
-Sintaxe alternativa:
+# Group Movies
 
-# Cabeçalho de primeiro nível
-#### Cabeçalho de quarto nível
+Resources related to movies in the API.
 
+## Movie collection [/movies]
 
-Parágrafos são separados por uma linha em branco
+### List all Movies [GET]
 
-Dois espaços no fim de uma linha produzem    
-uma quebra de linha.
+List movies in reverse order of publication.
+
++ Response 200 (application/json)
+
+    + Attributes (array[Movie])
+
+## Data structures
+
+### Movie
++ id: 810b43d0-fc0d-4199-8a79-25b471c880bf (string, required)
++ title: Avengers: Endgame (string, required)
++ description (string)
